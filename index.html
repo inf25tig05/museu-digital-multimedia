@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Museu Digital</title>
+  <link rel="stylesheet" href="./css/style.css" >
+</head>
+
+<body>
+
+  <header id="cabecalho">
+      <h1>Museu Digital</h1>
+
+      <nav>
+        <a href="sala-imagem.html">Sala de Imagem</a>
+        <a href="sala-som.html">Sala de Som</a>
+        <a href="sala-video.html">Sala de Vídeo</a>
+      </nav>
+    </header>
+
+  <main id="experiencia">
+
+    <div id="sequencia-imagens" class="camada">
+
+        <img src="./img/cenas-iniciais/cena_1.png" class="foto-sequencia" id="fachada" alt="Cena da fachada">
+        <img src="./img/cenas-iniciais/cena_2.png" class="foto-sequencia" id="fachada-10" alt="Cena da fachada porta a 10%">
+        <img src="./img/cenas-iniciais/cena_3.png" class="foto-sequencia" id="fachada-60" alt="Cena fachada-60%">
+        <img src="./img/cenas-iniciais/cena_4.png" class="foto-sequencia" id="fachada-90" alt="Cena fachada-90%">
+        <img src="./img/cenas-iniciais/cena_5.png" class="foto-sequencia" id="fachada-aberta" alt="Cena fachada-aberta">
+        <img src="./img/cenas-iniciais/cena_6.png" class="foto-sequencia" id="fachada-zoom" alt="Cena fachada-zoom">
+        <img src="./img/cenas-iniciais/cena_7.png" class="foto-sequencia" id="entrando-hall" alt="Cena entrando-hall">
+        <img src="./img/cenas-iniciais/cena_8.png" class="foto-sequencia" id="hall" alt="Cena hall">
+        <img src="./img/cenas-iniciais/cena_9.png" class="foto-sequencia" id="hall-para-portas" alt="Cena hall-para-portas">
+        <img src="./img/cenas-iniciais/cena_10.png" class="foto-sequencia" id="portas" alt="Cena portas">
+
+    </div>
+
+    <div id="livro">
+
+        <img src="./img/livro/capa-livro.png" id="imagem-livro" alt="Livro para marcar presença">
+
+
+       <button type="button" id="fechar-livro">X</button>
+
+        <form id="form-presenca">
+            <label>Nome:</label>
+            <input type="text" name="nome" required>
+
+            <label>Email:</label>
+            <input type="email" name="email" required>
+
+            <label>Telefone:</label>
+            <input type="tel" name="telefone" required>
+
+            <button type="submit" id="botao-presenca">Confirmar presença</button>
+
+            <p id="mensagem-presenca"></p>
+        </form>
+      
+    </div>
+
+    <div id="links-portas">
+
+      <a href="sala-imagem.html" class="porta-link porta-imagem"></a>
+
+      <a href="sala-som.html" class="porta-link porta-som"></a>
+
+      <a href="sala-video.html" class="porta-link porta-video"></a>
+
+    </div>
+
+  </main>
+
+  <script src="./js/script.js"></script>
+
+</body>
+
+</html>
