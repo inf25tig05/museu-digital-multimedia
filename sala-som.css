@@ -1,0 +1,190 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+}
+
+body {
+  background-color: black;
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+/* Sala principal */
+
+#sala-som {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  color: white;
+
+  background-image: url("../img/fundo-das-salas/sala-som.png");
+  background-size: cover;
+  background-position: center;
+
+}
+
+/* Cabeçalho */
+
+#cabecalho-som {
+  width: 100%;
+  padding: 15px 30px;
+  box-sizing: border-box;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  z-index: 10;
+}
+
+#cabecalho-som h1 {
+  margin: 0;
+  font-size: 34px;
+}
+
+#cabecalho-som a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+  font-size: 16px;
+}
+
+#cabecalho-som a:hover {
+  color: #d8b56d;
+}
+
+/* Área onde ficam os discos */
+
+#area-discos {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+/* Estilo geral dos discos */
+
+.disco {
+  width: 130px;
+  height: 130px;
+
+  position: absolute;
+  cursor: pointer;
+
+  border-radius: 50%;
+  overflow: hidden;
+
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.7);
+}
+
+/* Imagem do vinil */
+
+.disco img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Posição dos três discos */
+
+.disco-1 {
+  left: 3%;
+  top: 39%;
+  transform: rotateY(45deg);
+}
+
+.disco-2 {
+  left: 44%;
+  top: 39%;
+}
+
+.disco-3 {
+  right: 3%;
+  top: 38%;
+  transform: rotateY(45deg);
+}
+
+/* Informação que aparece no hover */
+
+.info-disco {
+  width: 100%;
+  height: 100%;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  background-color: rgba(255, 255, 255, 0.78);
+  color: black;
+
+  opacity: 0;
+
+  text-align: center;
+  padding: 30px 20px;
+  box-sizing: border-box;
+
+  transition: opacity 0.4s;
+}
+
+.disco:hover .info-disco {
+  opacity: 1;
+}
+
+.info-disco h2 {
+  margin: 0 0 12px 0;
+  font-size: 16px;
+}
+
+.info-disco p {
+  margin: 8px 0;
+  font-size: 10px;
+}
+
+/* Efeito quando passar o cursor */
+
+.disco:hover {
+  transform: scale(1.05);
+}
+
+/* Botão para parar a música */
+
+#parar-musica {
+  position: absolute;
+  bottom: 45px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  width: 170px;
+  height: 42px;
+
+  background-color: rgba(0, 0, 0, 0.45);
+  color: white;
+
+  border: 1px solid rgba(255, 255, 255, 0.45);
+  cursor: pointer;
+
+  font-size: 15px;
+  font-family: Georgia, "Times New Roman", serif;
+  letter-spacing: 1px;
+
+  transition: 0.3s;
+}
+
+#parar-musica:hover {
+  background-color: rgba(216, 181, 109, 0.85);
+  color: black;
+  border-color: rgba(216, 181, 109, 1);
+}
+
+
+/* Classe que vamos usar depois no JavaScript
+   para destacar o disco que estiver tocando */
+
+.disco.tocando {
+  box-shadow: 0 0 35px rgba(216, 181, 109, 0.9);
+}
