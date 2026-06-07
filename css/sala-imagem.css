@@ -221,6 +221,10 @@ html, body {
     font-size: 14px;
   }
 
+  .quadro-sala{
+    object-fit: contain;
+  }
+  
   .info-obra {
     padding: 20px 10px;
   }
