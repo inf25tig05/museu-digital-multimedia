@@ -27,11 +27,9 @@ html, body {
 .foto-sequencia {
   width: 100%;
   height: 100%;
-
   position: absolute;
   top: 0;
   left: 0;
-
   object-fit: cover;
   opacity: 0;
 }
@@ -44,15 +42,12 @@ html, body {
   width: 100%;
   padding: 10px 30px;
   box-sizing: border-box;
-
   display: flex;
   justify-content: flex-end;
   align-items: center;
-
   position: absolute;
   top: 0;
   left: 0;
-
   color: white;
   z-index: 5;
   opacity: 0.3;
@@ -68,18 +63,14 @@ html, body {
 }
 
 #livro {
-  width: 180px;
-  height: 130px;
-
+  width: 300px;
+  height: 200px;
   position: absolute;
   right: 70px;
   bottom: 60px;
-
   opacity: 0;
   z-index: 4;
-
   cursor: pointer;
-
   transition: width 0.6s, height 0.6s, opacity 0.4s;
 }
 
@@ -104,11 +95,9 @@ html, body {
 
 #livro.aberto #form-presenca {
   display: block;
-
   position: absolute;
   top: 65px;
   left: 95px;
-
   width: 290px;
 }
 
@@ -126,7 +115,6 @@ html, body {
   margin-top: 4px;
   padding-left: 6px;
   box-sizing: border-box;
-
   border: 1px solid #8a6332;
   background-color: #fff7e8;
 }
@@ -135,13 +123,10 @@ html, body {
   margin-top: 10px;
   width: 170px;
   height: 34px;
-
   background-color: #8a6332;
   color: white;
-
   border: none;
   cursor: pointer;
-
   font-family: Georgia, "Times New Roman", serif;
   font-size: 14px;
 }
@@ -155,17 +140,13 @@ html, body {
 
 #fechar-livro {
   display: none;
-
   position: absolute;
   top: 25px;
   right: 35px;
-
   width: 28px;
   height: 28px;
-
   background-color: #8a6332;
   color: white;
-
   border: none;
   cursor: pointer;
 }
@@ -185,14 +166,10 @@ html, body {
 
 .porta-link {
   position: absolute;
-  display: block;
- 
-
-  /* deixa visível só para testar */
- 
+  display: block; 
 }
 
-/* Porta esquerda */
+
 .porta-imagem {
   left: 29%;
   top: 49%;
@@ -200,7 +177,7 @@ html, body {
   height: 28%;
 }
 
-/* Porta do meio */
+
 .porta-som {
   left: 46%;
   top: 49%;
@@ -208,7 +185,7 @@ html, body {
   height: 28%;
 }
 
-/* Porta direita */
+
 .porta-video {
   left: 64%;
   top: 50%;
