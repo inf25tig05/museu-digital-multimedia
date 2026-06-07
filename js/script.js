@@ -5,7 +5,7 @@ var progressoAlvo = 0;
 var progressoAtual = 0;
 
 // Define o quanto o scroll do mouse influencia no progresso
-var sensibilidade = 0.00012;
+var sensibilidade = 0.00032;
 
 // Define o quão suave será a animação
 var suavidade = 0.05;
