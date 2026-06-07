@@ -42,8 +42,9 @@ Neste projeto utilizamos as seguintes tecnologias:
 - XSD
 - Markdown
 
-## Frameworks e bibliotecas Não foram utilizadas frameworks externas.
+## Frameworks e bibliotecas 
 
+Não foram utilizadas frameworks externas.
 O projeto foi desenvolvido com HTML, CSS e JavaScript puro. 
 
 ## Responsividade
