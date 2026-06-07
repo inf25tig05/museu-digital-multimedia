@@ -18,17 +18,17 @@ O objetivo foi criar uma experiência simples, visual e interativa, utilizando c
 
 O projeto está organizado da seguinte forma:
 
-- `index.html` (index.html) contém a página inicial do museu.
-- `sala-imagem.html` contém a sala dedicada às obras visuais.
-- `sala-som.html` contém a sala dedicada aos conteúdos sonoros.
-- `sala-video.html` contém a sala dedicada ao vídeo.
-- A pasta `css` contém os ficheiros de estilo.
-- A pasta `js` contém os ficheiros JavaScript.
-- A pasta `img` contém as imagens utilizadas no projeto.
-- A pasta `audio` contém os ficheiros de som.
-- A pasta `video` contém o vídeo utilizado no site.
-- A pasta `xml` contém os ficheiros XML e XSD.
-- A pasta `doc` contém os capítulos do relatório em Markdown.
+- [index.html](index.html) contém a página inicial do museu.
+- [sala-imagem.html](sala-imagem.html) contém a sala dedicada às obras visuais.
+- [sala-som.html](sala-som.html) contém a sala dedicada aos conteúdos sonoros.
+- [sala-video.html](sala-video.html) contém a sala dedicada ao vídeo.
+- A pasta [css](css) contém os ficheiros de estilo.
+- A pasta [js](js) contém os ficheiros JavaScript.
+- A pasta [img](img) contém as imagens utilizadas no projeto.
+- A pasta [audio](audio) contém os ficheiros de som.
+- A pasta [video](video) contém o vídeo utilizado no site.
+- A pasta [xml](xml) contém os ficheiros XML e XSD.
+- A pasta [doc](doc) contém os capítulos do relatório em Markdown.
 
 
 ## Tecnologias utilizadas
