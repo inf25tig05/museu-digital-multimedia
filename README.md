@@ -18,7 +18,7 @@ O objetivo foi criar uma experiência simples, visual e interativa, utilizando c
 
 O projeto está organizado da seguinte forma:
 
-- `index.html` contém a página inicial do museu.
+- `index.html` [index.html](index.html) contém a página inicial do museu.
 - `sala-imagem.html` contém a sala dedicada às obras visuais.
 - `sala-som.html` contém a sala dedicada aos conteúdos sonoros.
 - `sala-video.html` contém a sala dedicada ao vídeo.
