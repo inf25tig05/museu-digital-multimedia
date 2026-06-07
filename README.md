@@ -1,6 +1,6 @@
 # Museu Digital Multimédia
 
-Repositório criado para alojar o projeto desenvolvido no âmbito da unidade curricular ** Tecnologias da Internet **. 
+Repositório criado para alojar o projeto desenvolvido no âmbito da unidade curricular *Tecnologias da Internet*. 
 
 Projeto desenvolvido pelo grupo inf25tig05. 
 
