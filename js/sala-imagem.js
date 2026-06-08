@@ -27,7 +27,7 @@ fetch("./xml/sala-imagem.xml")
         quadro.querySelector("img").alt = titulo;
 
         quadro.querySelector(".titulo-obra").textContent = titulo;
-        quadro.querySelector(".autor-obra").textContent = "Autor: " + autor;
+        quadro.querySelector(".autor-obra").textContent = autor;
         quadro.querySelector(".vida-autor").textContent = nascimento + " - " + morte;
         quadro.querySelector(".descricao-obra").textContent = descricao;
       }
