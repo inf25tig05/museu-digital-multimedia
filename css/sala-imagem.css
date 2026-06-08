@@ -46,6 +46,7 @@ html, body {
   cursor: pointer;
   z-index: 5;
   opacity: 0.95;
+  margin: 0;
 }
 
 .quadro-sala img {
@@ -55,6 +56,7 @@ html, body {
   display: block;
 }
 
+
 .quadro-esquerda {
   left: 4.8%;
   top: 19%;
@@ -63,12 +65,14 @@ html, body {
   transform: perspective(600px) rotateY(38deg) rotateZ(5deg) rotateX(7deg);
 }
 
+
 .quadro-centro {
   left: 42.5%;
   top: 34%;
   width: 15%;
   height: 27%;
 }
+
 
 .quadro-direita {
   right: 5%;
@@ -78,17 +82,18 @@ html, body {
   transform: perspective(600px) rotateY(-41deg) rotateZ(-5deg) rotateX(4deg);
 }
 
+
 .info-obra {
   width: 100%;
   height: 100%;
   position: absolute;
   top: 0;
   left: 0;
-  background-color: rgba(255, 255, 255, 0.82);
+  background-color: rgba(255, 255, 255, 0.85);
   color: #1b1308;
   opacity: 0;
   text-align: center;
-  padding: 20px;
+  padding: 14px;
   box-sizing: border-box;
   transition: opacity 0.4s;
 }
@@ -102,74 +107,86 @@ html, body {
 }
 
 .info-obra h2 {
-  margin-top: 20px;
-  font-size: 18px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  font-size: 16px;
 }
 
-.info-obra p {
-  font-size: 15px;
-  line-height: 1.4;
+.info-obra h2::before {
+  content: "✦";
+  color: #7a4d12;
+}
+
+.info-obra mark {
+  background-color: rgba(216, 181, 109, 0.85);
+  color: #1b1308;
+  padding: 2px 5px;
+  border-radius: 4px;
+}
+
+.tabela-obra {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 11px;
+}
+
+.tabela-obra th,
+.tabela-obra td {
+  border: 1px solid rgba(27, 19, 8, 0.35);
+  padding: 4px;
+  text-align: left;
+  vertical-align: top;
+}
+
+.tabela-obra th {
+  width: 30%;
+  background-color: rgba(216, 181, 109, 0.35);
+}
+
+
+.quadro-centro .info-obra {
+  padding: 8px;
 }
 
 .quadro-centro .info-obra h2 {
-  margin-top: 10px;
-}
-
-.quadro-centro .info-obra p {
+  margin-top: 3px;
+  margin-bottom: 4px;
   font-size: 10px;
 }
 
+.quadro-centro .tabela-obra {
+  font-size: 7px;
+}
 
+.quadro-centro .tabela-obra th,
+.quadro-centro .tabela-obra td {
+  padding: 2px;
+}
+
+/* Responsivo para tablet */
 @media (min-width: 768px) and (max-width: 1024px) {
-
-  #sala-imagem {
-    background-size: 100% 100%;
-  }
-
   #cabecalho-sala {
     padding: 12px 20px;
   }
 
-  #cabecalho-sala nav {
-    display: flex;
-    justify-content: center;
-    gap: 16px;
-    flex-wrap: wrap;
-  }
-
   #cabecalho-sala a {
-    margin-left: 0;
-    font-size: 14px;
-  }
-
-  .quadro-sala{
-    object-fit: contain;
-  }
-  
-  .info-obra {
-    padding: 20px 10px;
+    font-size: 13px;
+    margin-left: 14px;
   }
 
   .info-obra h2 {
-    margin-top: 8px;
-    font-size: 14px;
+    font-size: 13px;
   }
 
-  .info-obra p {
-    margin: 4px 0;
-    font-size: 10px;
-    line-height: 1.25;
+  .tabela-obra {
+    font-size: 9px;
   }
 
   .quadro-centro .info-obra h2 {
-    font-size: 11px;
+    font-size: 8px;
   }
 
-  .quadro-centro .info-obra p {
-    font-size: 7px;
-  }
-
-  .quadro-sala:active .info-obra {
-    opacity: 1;
+  .quadro-centro .tabela-obra {
+    font-size: 6px;
   }
 }
