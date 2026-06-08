@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sala de Imagem - Museu Digital</title>
   <link rel="stylesheet" href="./css/sala-imagem.css">
 </head>
@@ -12,7 +13,6 @@
   <main id="sala-imagem">
 
     <header id="cabecalho-sala">
-
       <nav>
         <a href="index.html">Início</a>
         <a href="sala-imagem.html">Sala De Imagem</a>
@@ -21,39 +21,89 @@
       </nav>
     </header>
 
-    <div class="quadro-sala quadro-esquerda" data-id="quadro-esquerda">
+    <figure class="quadro-sala quadro-esquerda" data-id="quadro-esquerda">
       <img src="" alt="">
 
-      <div class="info-obra">
-        <h2 class="titulo-obra"></h2>
-        <p class="autor-obra"></p>
-        <p class="vida-autor"></p>
-        <p class="descricao-obra"></p>
-      </div>
-    </div>
+      <figcaption class="info-obra">
+        <h2>
+          <mark class="titulo-obra"></mark>
+        </h2>
 
-    <div class="quadro-sala quadro-centro" data-id="quadro-centro">
+        <table class="tabela-obra">
+          <tr>
+            <th>Autor</th>
+            <td class="autor-obra"></td>
+          </tr>
+
+          <tr>
+            <th>Vida</th>
+            <td class="vida-autor"></td>
+          </tr>
+
+          <tr>
+            <th>Descrição</th>
+            <td class="descricao-obra"></td>
+          </tr>
+        </table>
+      </figcaption>
+    </figure>
+
+    <figure class="quadro-sala quadro-centro" data-id="quadro-centro">
       <img src="" alt="">
 
-      <div class="info-obra">
-        <h2 class="titulo-obra"></h2>
-        <p class="autor-obra"></p>
-        <p class="vida-autor"></p>
-        <p class="descricao-obra"></p>
-      </div>
-    </div>
+      <figcaption class="info-obra">
+        <h2>
+          <mark class="titulo-obra"></mark>
+        </h2>
 
-    <div class="quadro-sala quadro-direita" data-id="quadro-direita">
+        <table class="tabela-obra">
+          <tr>
+            <th>Autor</th>
+            <td class="autor-obra"></td>
+          </tr>
+
+          <tr>
+            <th>Vida</th>
+            <td class="vida-autor"></td>
+          </tr>
+
+          <tr>
+            <th>Descrição</th>
+            <td class="descricao-obra"></td>
+          </tr>
+        </table>
+      </figcaption>
+    </figure>
+
+    <figure class="quadro-sala quadro-direita" data-id="quadro-direita">
       <img src="" alt="">
 
-      <div class="info-obra">
-        <h2 class="titulo-obra"></h2>
-        <p class="autor-obra"></p>
-        <p class="vida-autor"></p>
-        <p class="descricao-obra"></p>
-      </div>
-    </div>
+      <figcaption class="info-obra">
+        <h2>
+          <mark class="titulo-obra"></mark>
+        </h2>
+
+        <table class="tabela-obra">
+          <tr>
+            <th>Autor</th>
+            <td class="autor-obra"></td>
+          </tr>
+
+          <tr>
+            <th>Vida</th>
+            <td class="vida-autor"></td>
+          </tr>
+
+          <tr>
+            <th>Descrição</th>
+            <td class="descricao-obra"></td>
+          </tr>
+        </table>
+      </figcaption>
+    </figure>
+
   </main>
+
   <script src="./js/sala-imagem.js"></script>
 </body>
 
