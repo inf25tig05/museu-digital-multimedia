@@ -56,7 +56,6 @@ html, body {
   display: block;
 }
 
-
 .quadro-esquerda {
   left: 4.8%;
   top: 19%;
@@ -65,14 +64,12 @@ html, body {
   transform: perspective(600px) rotateY(38deg) rotateZ(5deg) rotateX(7deg);
 }
 
-
 .quadro-centro {
   left: 42.5%;
   top: 34%;
   width: 15%;
   height: 27%;
 }
-
 
 .quadro-direita {
   right: 5%;
@@ -81,7 +78,6 @@ html, body {
   height: 39%;
   transform: perspective(600px) rotateY(-41deg) rotateZ(-5deg) rotateX(4deg);
 }
-
 
 .info-obra {
   width: 100%;
@@ -142,7 +138,6 @@ html, body {
   width: 30%;
   background-color: rgba(216, 181, 109, 0.35);
 }
-
 
 .quadro-centro .info-obra {
   padding: 8px;
