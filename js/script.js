@@ -42,33 +42,6 @@ window.addEventListener("wheel", function(event) {
 
 }, { passive: false });
 
-var toqueAnteriorY = null;
-var sensibilidadeToque = 0.003;
-
-window.addEventListener("touchstart", function(event) {
-  if (event.touches.length > 0) {
-    toqueAnteriorY = event.touches[0].clientY;
-  }
-}, { passive: false });
-
-window.addEventListener("touchmove", function(event) {
-  if (event.touches.length > 0 && toqueAnteriorY !== null) {
-    event.preventDefault();
-
-    var toqueAtualY = event.touches[0].clientY;
-    var diferenca = toqueAnteriorY - toqueAtualY;
-
-    progressoAlvo = progressoAlvo + diferenca * sensibilidadeToque;
-    progressoAlvo = limitar(progressoAlvo, 0, 1);
-
-    toqueAnteriorY = toqueAtualY;
-  }
-}, { passive: false });
-
-window.addEventListener("touchend", function() {
-  toqueAnteriorY = null;
-});
-
 
 // Função que faz a animação acontecer continuamente
 function animar() {
